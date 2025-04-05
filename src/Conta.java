@@ -1,5 +1,3 @@
-package modelagem;
-
 public class Conta {
 	private String numero;
 	private String agencia;
@@ -15,11 +13,11 @@ public class Conta {
 		this.saldo = saldo;
 	}
 	
-	public String getNumero() { //Número
+	public String getNumero() { //NÃºmero
 		return this.numero;
 	}
 	
-	public String getAgencia() { //Agência
+	public String getAgencia() { //AgÃªncia
 		return this.agencia;
 	}
 
@@ -33,5 +31,5 @@ public class Conta {
 
 	public double getSaldo() { //Saldo
 		return this.saldo;
-	}
+	} 
 }
