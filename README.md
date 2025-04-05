@@ -1,18 +1,13 @@
-## Getting Started
+# Banco POO (Programação Orientada a Objetos)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Funcionalidade
 
-## Folder Structure
+Feito para uma simulação básica do funcionamento de uma aplicação bancária, desde a criação de uma conta fictícia até gerenciamento de funções como: Checar **saldo**, **Depositar** dinheiro e **Sacar** dinheiro da conta. Todo o sistema roda no próprio terminal, sem a necessidade de uma interface gráfica.
 
-The workspace contains two folders by default, where:
+## Dependências
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Apenas possui a importação de uma função, da biblioteca Util, chamada **Scanner**, que detecta a entrada de dados do usuário a partir de "inputs" que são dados a ele.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Histórico
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Este foi um dos primeiros projetos feitos em Java, durante minha graduação em Análise e Desenvolvimento de Sistemas.
