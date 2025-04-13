@@ -4,32 +4,45 @@ public class Conta {
 	private String digito;
 	private String cliente;
 	private double saldo;
-	
-	public Conta(String numero, String agencia, String digito, String cliente, double saldo) {
-		this.numero = numero;
+
+	public Conta(String agencia, String numero, String digito, String cliente, double saldo) {
 		this.agencia = agencia;
+		this.numero = numero;
 		this.digito = digito;
 		this.cliente = cliente;
 		this.saldo = saldo;
 	}
-	
-	public String getNumero() { //Número
+
+	public String getNumero() {
 		return this.numero;
 	}
-	
-	public String getAgencia() { //Agência
+
+	public String getAgencia() {
 		return this.agencia;
 	}
 
-	public String getDigito() { //Digito
+	public String getDigito() {
 		return this.digito;
 	}
 
-	public String getCliente() { //Cliente
+	public String getCliente() {
 		return this.cliente;
 	}
 
-	public double getSaldo() { //Saldo
+	public void setCliente(String cliente) {
+		this.cliente = cliente;
+	}
+
+	public double getSaldo() {
 		return this.saldo;
-	} 
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	// Senha definida do cliente, coletada num banco de dados fictício
+	public final int getSenha() {
+		return 1234;
+	}
 }
