@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.plaf.FontUIResource;
+
 import java.awt.*;
 
 public class App extends JFrame {
@@ -12,6 +14,7 @@ public class App extends JFrame {
 	int cardAtual = 1;
 
 	// Definição de parâmetros dos elementos
+	Font fonteMensagem = new Font("Arial", Font.BOLD, 30);
 	Font fontePadrao = new Font("Arial", Font.BOLD, 90);
 	Font fonteTitulo = new Font("Arial", Font.BOLD, 200);
 	Font fonteSubtitulo = new Font("Arial", Font.BOLD, 100);
@@ -64,6 +67,10 @@ public class App extends JFrame {
 		setLocationRelativeTo(null);
 		// Finaliza o programa ao fechar a aplicação
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		// Gerenciamento dos parâmetros de todos os JOptionPane
+		UIManager.put("OptionPane.minimumSize", new Dimension(600, 50));
+		UIManager.put("OptionPane.messageFont", new FontUIResource(fonteMensagem));
 
 		// Adiciona o Painel Principal à aplicação da aplicação
 		add(painelPrincipal);
